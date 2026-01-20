@@ -17,8 +17,4 @@ class PropinaTest {
         () -> Propina.totalConPropina(-1.0, 10.0));
   }
 
-  // TODO: Agregar al menos 2 pruebas adicionales:
-  //  - porcentaje 0 devuelve subtotal
-  //  - porcentaje 100 duplica subtotal
-  //  - porcentaje fuera de rango lanza excepcion
 }

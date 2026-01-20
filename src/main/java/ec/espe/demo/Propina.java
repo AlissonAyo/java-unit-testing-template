@@ -11,7 +11,12 @@ public class Propina {
    *  - si una regla no se cumple: lanzar IllegalArgumentException
    */
   public static double totalConPropina(double subtotal, double porcentajePropina) {
-    // TODO: reemplazar esta implementacion
-    throw new UnsupportedOperationException("Pendiente de implementar");
+    if (subtotal < 0) {
+      throw new IllegalArgumentException("Subtotal cannot be negative");
+    }
+    if (porcentajePropina < 0 || porcentajePropina > 100) {
+      throw new IllegalArgumentException("Tip percentage must be between 0 and 100");
+    }
+    return subtotal + subtotal * (porcentajePropina / 100);
   }
 }
